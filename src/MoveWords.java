@@ -73,68 +73,68 @@ public class MoveWords{
 		switch(first){
 			case "PIEDRA" : 
 				if("PAPEL".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("TIJERAS".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("LAGARTO".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("SPOCK".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 			case "PAPEL": 
 				if("PIEDRA".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("TIJERAS".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("LAGARTO".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("SPOCK".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 			case "TIJERAS": 
 				if("PIEDRA".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("PAPEL".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("LAGARTO".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("SPOCK".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 			case "LAGARTO": 
 				if("PIEDRA".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("PAPEL".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("TIJERAS".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("SPOCK".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 			case "SPOCK": 
 				if("PIEDRA".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("PAPEL".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 				if("TIJERAS".equals(second)){
-					resultado = GANA;
+					return GANA;
 				}
 				if("LAGARTO".equals(second)){
-					resultado = PIERDE;
+					return PIERDE;
 				}
 		}
 
