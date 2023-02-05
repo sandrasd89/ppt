@@ -61,13 +61,84 @@ public class MoveWords{
 
     public static int checkWinner(String first, String second){
 	    int first_i, second_i;
+		int resultado=0;
 
 	    first_i = getIndex(first);
 	    second_i = getIndex(second);
 
 	    if (first_i == second_i) return EMPATE;
 	    
-	    return (( (first_i +1) % validMoves.length ) == second_i ) ? GANA: PIERDE;
+	    //*return (( (first_i +1) % validMoves.length ) == second_i ) ? GANA: PIERDE;
+
+		switch(first){
+			case "PIEDRA" : 
+				if("PAPEL".equals(second)){
+					resultado = PIERDE;
+				}
+				if("TIJERAS".equals(second)){
+					resultado = GANA;
+				}
+				if("LAGARTO".equals(second)){
+					resultado = GANA;
+				}
+				if("SPOCK".equals(second)){
+					resultado = PIERDE;
+				}
+			case "PAPEL": 
+				if("PIEDRA".equals(second)){
+					resultado = PIERDE;
+				}
+				if("TIJERAS".equals(second)){
+					resultado = PIERDE;
+				}
+				if("LAGARTO".equals(second)){
+					resultado = PIERDE;
+				}
+				if("SPOCK".equals(second)){
+					resultado = GANA;
+				}
+			case "TIJERA": 
+				if("PIEDRA".equals(second)){
+					resultado = PIERDE;
+				}
+				if("PAPEL".equals(second)){
+					resultado = GANA;
+				}
+				if("LAGARTO".equals(second)){
+					resultado = GANA;
+				}
+				if("SPOCK".equals(second)){
+					resultado = PIERDE;
+				}
+			case "LAGARTO": 
+				if("PIEDRA".equals(second)){
+					resultado = PIERDE;
+				}
+				if("PAPEL".equals(second)){
+					resultado = GANA;
+				}
+				if("TIJERAS".equals(second)){
+					resultado = PIERDE;
+				}
+				if("SPOCK".equals(second)){
+					resultado = GANA;
+				}
+			case "SPOCK": 
+				if("PIEDRA".equals(second)){
+					resultado = GANA;
+				}
+				if("PAPEL".equals(second)){
+					resultado = PIERDE;
+				}
+				if("TIJERAS".equals(second)){
+					resultado = GANA;
+				}
+				if("LAGARTO".equals(second)){
+					resultado = PIERDE;
+				}
+		}
+
+		return resultado;
 	}
 	
 } 
