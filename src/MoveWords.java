@@ -97,7 +97,7 @@ public class MoveWords{
 				if("SPOCK".equals(second)){
 					resultado = GANA;
 				}
-			case "TIJERA": 
+			case "TIJERAS": 
 				if("PIEDRA".equals(second)){
 					resultado = PIERDE;
 				}
